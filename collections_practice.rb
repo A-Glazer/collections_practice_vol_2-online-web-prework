@@ -1,13 +1,9 @@
 require 'pry'
 
 def begins_with_r (array)
-  array.select {|word| word.start_with?("r")}
-  if word.size > 1
-    "true"
-  else
-    "false"
+  array.any? {|word| word.start_with?("r")}
 
-binding.pry
-  end
+
+
 
 end
