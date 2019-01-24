@@ -21,12 +21,16 @@ def remove_non_strings(array)
 end
 
 def count_elements(hashes)
-new_array = []
+name = ""
   hashes.each do |phrase|
-    phrase.each do |key, value|
-      value.select {|word| word == value }
+    phrase[:count] = 0
+      name = phrase[:name]
+      hashes.each do |sentence|
+        if sentence[:name] == name
+          phrase[:count] += 1
 
-    end
-  end
-new_array
+        end
+      end
+
+  end.uniq
 end
