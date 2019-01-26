@@ -36,5 +36,5 @@ name = ""
 end
 
 def merge_data(one,two)
-
+one.merge(two)
 end
