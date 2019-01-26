@@ -35,6 +35,6 @@ name = ""
   end.uniq
 end
 
-def merge_data
-
+def merge_data(one,two)
+binding.pry
 end
